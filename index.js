@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ limit: "10mb", extended: true }));
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://frontend-b-pri.vercel.app",
     credentials: true,
   })
 );
