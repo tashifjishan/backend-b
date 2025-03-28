@@ -30,6 +30,10 @@ app.use("/api/comments", commentRoutes);
 app.get("/", (req, res)=>{
   res.send("welcome now!")
 })
+
+app.get("/contact", (req, res)=>{
+  res.send("contact karna chahte ho!")
+})
 async function main() {
   await mongoose.connect(process.env.MONGODB_URL);
   
